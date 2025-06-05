@@ -1,0 +1,307 @@
+* {
+  scroll-behavior: smooth;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #fff0f5;
+  color: #582534;
+}
+
+.navbar {
+  background: linear-gradient(to right, #fadadd, #f8c1d4);
+  padding-right: 15px;
+  padding-left: 15px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navdiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+}
+
+.logo a {
+  font-family: "Playfair Display", serif;
+  color: #582534;
+  font-size: 35px;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+li a {
+  color: #582534;
+  font-size: 15px;
+  font-weight: bold;
+  padding-right: 25px;
+  transition: 0.3s ease-in-out;
+}
+
+li a:hover{  
+  color: white;
+}
+
+header {
+  background: linear-gradient(to right, #fadadd, #f8c1d4);
+  padding: 60px 20px;
+  text-align: center;
+}
+header h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 3em;
+  margin: 0;
+}
+header p {
+  font-size: 1.2em;
+}
+.btn {
+  background: #b76e79;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 8px;
+  margin: 10px;
+  display: inline-block;
+  transition: 0.3s ease-in-out;
+  border: 1px solid black;
+}
+
+.btn:hover {
+  background: transparent;
+  color: black;
+}
+
+section {
+  padding: 70px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+.section-title {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+  font-family: "Playfair Display", serif;
+}
+.schedule,
+.speakers {
+  display: grid;
+  gap: 20px;
+}
+.schedule-item,
+.speaker-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+footer {
+  background: #582534;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+#gallary {
+  position: relative;
+}
+
+#gallary .wrapper {
+  width: 600px;
+  height: 400px;
+  box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.6);
+  margin: 0.5rem auto;
+  overflow: hidden;
+  border-radius: 20px;
+}
+#gallary .wrapper-holder {
+  display: grid;
+  grid-template-columns: repeat(4, 100%);
+  height: 100%;
+  width: 100%;
+  animation: slider 30s ease-in-out infinite alternate;
+}
+
+#gallary #slider-image-1 {
+  background-image: url(images/images.jpg);
+  background-position: center;
+}
+#gallary #slider-image-2 {
+  background-image: url(images/Pinterest-1.jpg);
+  background-position: center;
+}
+#gallary #slider-image-3 {
+  background-image:url(images/Shri_Narendra_Modi\,_Prime_Minister_of_India_\(3x4_cropped\).jpg);
+  background-position: center;
+}
+#gallary #slider-image-4 {
+  background-image: url(images/images2.jpg);
+  background-position: center;
+}
+
+#gallary .button-holder .button {
+  background-color: white;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  display: inline-block;
+  margin: 0.3rem;
+}
+
+#gallary .button-holder {
+  position: absolute;
+  left: 45%;
+  bottom: 15%;
+}
+
+input { 
+  border-radius: 5px;
+  height: 30px;
+  width: 300px;
+}
+
+.options {  
+  height: 30px;
+  width: 90px;
+  background-color: #f8c1d4;
+  border: 1px solid #582534;
+  border-radius: 5px;
+}
+
+textarea{ 
+  height: 110px;
+  width: 300px;
+  border-radius: 5px;
+  border: 2px solid #582534;
+  resize: none;
+
+}
+
+.social{  
+  display: block;
+}
+
+span img{
+  height: 20px;
+  width: 20px;
+  padding: 0 20px; 
+  resize: none;
+}
+
+
+
+
+
+
+@keyframes slider {
+  0% {
+    transform: translateX(0%);
+  }
+  10% {
+    transform: translateX(-100%);
+  }
+  20% {
+    transform: translateX(-100%);
+  }
+  30% {
+    transform: translateX(-200%);
+  }
+  40% {
+    transform: translateX(-200%);
+  }
+  50% {
+    transform: translateX(-200%);
+  }
+  60% {
+    transform: translateX(-300%);
+  }
+  70% {
+    transform: translateX(-300%);
+  }
+  80% {
+    transform: translateX(-300%);
+  }
+  90% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.fas {
+  display: none;
+}
+
+/* -------------------------------------------------------------------Media Quaries--------------------------------------------------- */
+
+@media (min-width: 768px) {
+      .schedule, .speakers {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+@media (max-width: 768px) {
+  .navbar {
+    background: linear-gradient(to right, #fadadd, #f8c1d4);
+    padding-right: 15px;
+    padding-left: 15px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  .logo a {
+    font-size: 30px;
+  }
+
+  header h1 {
+    padding-top: 30px;
+  }
+
+  .fas {
+    display: block;
+    font-size: 25px;
+    padding-right: 50px;
+  }
+
+  nav ul {
+    background: transparent;
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    right: -100vh;
+    width: 30vh;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: 0.5s ease-in-out;
+
+  }
+
+  nav ul li {
+    display: block;
+    margin: 25px;
+  }
+
+  nav ul .fas {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+
+  #gallary .wrapper {
+    width: 400px;
+    height: 400px;
+  }
+}
