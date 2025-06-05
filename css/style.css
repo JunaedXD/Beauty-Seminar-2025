@@ -251,6 +251,8 @@ span img{
     }
 
 @media (max-width: 768px) {
+
+
   .navbar {
     background: linear-gradient(to right, #fadadd, #f8c1d4);
     padding-right: 15px;
@@ -261,30 +263,35 @@ span img{
   }
 
   .logo a {
-    font-size: 30px;
+    font-size: 20px;
   }
 
   header h1 {
     padding-top: 30px;
   }
 
+  header {  
+    
+  }
+
   .fas {
     display: block;
     font-size: 25px;
-    padding-right: 50px;
+    padding-right: 30px;
   }
 
   nav ul {
     background: transparent;
     backdrop-filter: blur(10px);
-    position: fixed;
     top: 0;
     right: -100vh;
     width: 30vh;
-    height: 100vh;
+    position: static;
+    height: 200vh;
     padding-top: 50px;
     z-index: 2;
     transition: 0.5s ease-in-out;
+    position: fixed;
 
   }
 
@@ -301,7 +308,13 @@ span img{
   }
 
   #gallary .wrapper {
-    width: 400px;
+    width: 300px;
     height: 400px;
   }
+
+  footer p{
+ font-size: 10px;
+}
+
+
 }
